@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        width: 300px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .parent{
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        margin: 40px auto;
+        position: relative;
+    }
+    .text{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+    .image:hover{
+        transform: rotate(90deg);
+        transform-origin: top left;
+    }
+</style>
+<body>
+    <h1>See effect on hover</h1>
+    <div class="parent">
+        <div class="text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptates temporibus incidunt autem quo atque facilis! Ipsa est recusandae sunt, rem accusamus facere iure maiores minima id quo, quam nisi! Placeat repellat alias soluta dolore nisi? Consequuntur, iste? Magni, fuga? Tempore provident laboriosam quae voluptates voluptatem quod exercitationem autem temporibus minus possimus iure veniam sint, repellat aliquid non laborum! Vero, minima iure reprehenderit laudantium veritatis nobis voluptatum? Velit, tempora laborum.
+        </div>
+        <div class="image">
+            <img src="img/sunset-1373171_1280.jpg" alt="" width="100%" height="100%">
+        </div>
+    </div>
+</body>
+</html>

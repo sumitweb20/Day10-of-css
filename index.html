@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        width: 900px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .parent{
+        display: flex;
+    }
+    .box{
+        width: 300px;
+        height: 300px;
+        border: 2px solid red;
+        font-size: 40px;
+        text-align: center;
+        transition: 1s;
+    }
+    .box:hover:nth-child(2){
+        transform: translate(0,100%);
+    }
+</style>
+<body>
+    <h1>See effect on hover</h1>
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
